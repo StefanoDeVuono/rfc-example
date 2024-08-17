@@ -9,7 +9,7 @@ Status: Draft
 
 ## Problem Statement
 
-Artists and collectors alike place a premium on the authenticity of a piece, to protect both the artist's intellectual property and reputation as well as the collector's value and investment. Artists in digital medium is digital images face greater stakes as uniqueness of digital media is particularly challenging Copying a digital image with perfect fidelity is trivially easy and editing or manipulating digital media poses little to no barrier. While this need is particularly pressing in the digital art community, it also extends to secondary applications in sectors like journalism, law, and digital archiving, where image authenticity is similarly critical. Current methods of verifying digital images either disrupt the user experience by altering the image format or are vulnerable to being bypassed.
+Artists and collectors alike place a premium on the authenticity of a piece, to protect both the artist's intellectual property and reputation as well as the collector's value and investment. Artists in digital media face greater stakes, as ensuring the uniqueness of digital artwork is particularly challenging. Copying a digital image with perfect fidelity is trivially easy, and editing or manipulating digital media poses little to no barrier. While this need is particularly pressing in the digital art community, it also extends to secondary applications in sectors like journalism, law, and digital archiving, where image authenticity is similarly critical. Current methods of verifying digital images either disrupt the user experience by altering the image format or are vulnerable to being bypassed.
 
 ## Proposed Solution
 
@@ -33,7 +33,7 @@ Out of Scope:
 
 The solution involves three primary components:
 
-- Tokens: Analagous to a JWT the token will contain three parts: a public key generated from the final proof, metadata about the print number, and a signature. Content hashing will generate the public key, tying it to a particular artwork. The metadata will reflect the unique print number within the edition (ie: print 7/10 or 2/5) and other relevant information. Finally, a the content hash and metadata will be hashed by a private to make the print authentic.
+- Tokens: Similar to a JWT, the token will contain three parts: a public key generated from the final proof, metadata about the print number, and a signature. Content hashing will generate the public key, tying it to a particular artwork. The metadata will reflect the unique print number within the edition (ie: print 7/10 or 2/5) and other relevant information. Finally, the content hash and metadata will be hashed by a private to make the print authentic.
 
     - Data Embedding: A unique identifier or hash is generated for each digital image and embedded into the image file using an imperceptible method (e.g., steganography[^5]). This process does not alter the image's visible content.
 
@@ -43,11 +43,11 @@ This process can be integrated into existing image-processing or storage workflo
 
 ## **Risks and Mitigations**
 
-- **Risk**: Someone who gets their hand on both the private key and the artist original could start "printing" their own copies.
+- **Risk**: Someone who gets their hands on both the private key and the artist's original could start "printing" their own copies.
 
     **Mitigation**: The current art market is worth hundreds of billions and still subject to theft, so solving theft is not feasible. Someone could steal the file a collector has. This becomes a proof of ownership problem. A hardened DB or blockchain could provide a record of title that mitigates opportunities for theft.
 
-- **Risk**: Control of the private key involves a trade-off of creative control. For example, if a recognized authenticator, like Sotheby's controls the key, they might decide to make additional prints against the artists will. Conversely, an artist holding the private key, could decide to unilaterally issue new editions depressing the price of the existing pieces.
+- **Risk**: Possession of the private key involves a trade-off of creative control. For example, if a recognized authenticator, like Sotheby's controls the key, they might decide to make additional prints against the artists will. Conversely, an artist holding the private key, could decide to unilaterally issue new editions depressing the price of the existing pieces.
 
     **Mitigation**: Perhaps the authentication token will need two private keys: one from the artist and one from an authenticator.
 
@@ -80,7 +80,7 @@ This process can be integrated into existing image-processing or storage workflo
 
 ### Notes
 
-Performance is not major concern. Art takes a long time to make. According to [Artsy](https://www.artsy.net/article/artsy-editorial-what-to-do-if-you-think-you-ve-found-a-masterpiece-in-the-attic), current time to authenticate a painting can be a long time, as paperwork and shipping are often required. In some cases (if the artist has a cagalogue, its committee may only meet twice a year) can be a minimum of 6 months.
+Performance is not a major concern. Art takes a long time to make. According to [Artsy](https://www.artsy.net/article/artsy-editorial-what-to-do-if-you-think-you-ve-found-a-masterpiece-in-the-attic), current time to authenticate a painting can be a long time, as paperwork and shipping are often required. In some cases (if the artist has a cagalogue, its committee may only meet twice a year) can be a minimum of 6 months.
 
 ### Possible Token Representation
 #### Example Input:
@@ -111,7 +111,7 @@ eyJjb250ZW50IjoiQWRyaWFuIFBpcGVyJ3MgRnVuayBMZXNzb25zIiwiYWxnIjoiSFMyNTYifQ.eyJ0a
 
 [^1] Final Proof: An original print or pre-print from which other prints are made.
 
-[^2] Print Edition: a limited series of copies of an artwowrk made by an artist.
+[^2] Print Edition: a limited series of copies of an artwork made by an artist.
 
 [^3] Numbered Print: shows the identity of the unique piece and how many pieces are in the edition. A numbered print of "3/10" would be the third print of an edition of 10 prints.
 

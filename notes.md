@@ -4,7 +4,7 @@
 
 - Adoption by at least two major auction houses. Having more than one auction house will help development of an open standard.
 
-- Adoption by at least 10 major artist. Art is at the heart of the project. Buy-in from major artists is sine qua non.
+- Adoption by at least 10 major artists. Art is at the heart of the project. Buy-in from major artists is sine qua non.
 
 - Adoption by at least 5 major contemporary art museums around the world. Museums have a vested stake in making sure art is both availalbe to the public and authentic. Interest from different museums will incentivize artists to join.
 
