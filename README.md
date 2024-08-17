@@ -109,12 +109,12 @@ eyJjb250ZW50IjoiQWRyaWFuIFBpcGVyJ3MgRnVuayBMZXNzb25zIiwiYWxnIjoiSFMyNTYifQ.eyJ0a
 
 ### Key Terminology:
 
-[^1] Final Proof: An original print or pre-print from which other prints are made.
+[^1]: Final Proof: An original print or pre-print from which other prints are made.
 
-[^2] Print Edition: a limited series of copies of an artwork made by an artist.
+[^2]: Print Edition: a limited series of copies of an artwork made by an artist.
 
-[^3] Numbered Print: shows the identity of the unique piece and how many pieces are in the edition. A numbered print of "3/10" would be the third print of an edition of 10 prints.
+[^3]: Numbered Print: shows the identity of the unique piece and how many pieces are in the edition. A numbered print of "3/10" would be the third print of an edition of 10 prints.
 
-[^4]Authenticator: Agent that can verify that a piece is an authentic numbered print.
+[^4]: Authenticator: Agent that can verify that a piece is an authentic numbered print.
 
-[^5]Steganography: The process of hiding information in an existing object such that it is not perceptible to the human eye. In this context it would mean a token hidden in a numbered print, but a staganograph can also exist in video, audio, or other media.
+[^5]: Steganography: The process of hiding information in an existing object such that it is not perceptible to the human eye. In this context it would mean a token hidden in a numbered print, but a staganograph can also exist in video, audio, or other media.
